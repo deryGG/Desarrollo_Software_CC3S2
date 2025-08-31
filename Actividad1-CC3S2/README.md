@@ -247,7 +247,7 @@ Los principales riesgos en un despliegue incluyen fallos críticos que obliguen 
 
 -Diseña un experimento controlado para validar que el despliegue gradual reduce riesgo frente a uno "big-bang": define métrica primaria, grupo control, criterio de éxito y plan de reversión.
 
-Un experimento controlado para validar despliegues graduales consistiría en comparar un grupo con despliegue big-bang frente a otro con despliegue progresivo, midiendo como métrica principal la tasa de errores en producción. El criterio de éxito sería demostrar menor impacto en el grupo gradual, con un plan de reversión inmediato si la tasa excede un umbral definido.
+Un experimento controlado para validar despliegues graduales consistiría en comparar un grupo con despliegue big-bang frente a otro con despliegue progresivo, midiendo como métrica principal la tasa de errores en produccion. El criterio de éxito sería demostrar menor impacto en el grupo gradual, con un plan de reversión inmediato si la tasa excede un umbral definido.
 
 
 #### 4.8 Arquitectura mínima para DevSecOps (HTTP/DNS/TLS + 12-Factor)
@@ -262,4 +262,4 @@ La arquitectura mínima de DevSecOps integra Cliente, DNS, Servicio, TLS. En cad
 
 -Relaciona dos principios 12-Factor (config por entorno; logs a stdout) con evidencias operativas que un docente podría revisar (por ejemplo, diffs mínimos entre entornos, trazabilidad de logs).
 
-Los principios 12-Factor se aplican en la configuración por entorno, garantizando cambios mínimos entre dev, test y prod, y en el manejo de logs a stdout, que permiten trazabilidad uniforme que cualquier docente puede auditar.
+Los principios 12-Factor se aplican en la configuración por entorno, garantizando cambios mínimos entre dev, test y prod, y en el manejo de logs a stdout, que permiten una trazabilidad uniforme que cualquier persona puede auditar. 
