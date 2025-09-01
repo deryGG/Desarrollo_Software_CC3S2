@@ -23,7 +23,7 @@ Un  contexto cercano a cascada es en los sistemas regulados o hardware cerrado (
 
 -Inserta una imagen de silos organizacionales en imagenes/silos-equipos.png (o un dibujo propio).
 
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/silos-equipos.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/silos-equipos.png" width="500"/>
 
 -Identifica dos limitaciones del ciclo "construcción -> operación" sin integración continua (por ejemplo, grandes lotes, colas de defectos).
 
@@ -74,7 +74,7 @@ Validación: que los umbrales sean concretos y la excepción tenga fecha límite
 
 -Inserta una imagen del pipeline o canary en imagenes/pipeline_canary.png.
 
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/pipeline_canary.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/pipeline_canary.png" width="500"/>
 
 -Elige una estrategia para un microservicio crítico (por ejemplo, autenticación) y justifica.
 
@@ -116,10 +116,10 @@ La cabecera Cache-Control impacta directamente en el rendimiento porque define c
 -Captura: imagenes/http-evidencia.png, con los campos resaltados.
 
 <h3>Evidencia: Solicitud HTTP</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/http-evidencia.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/http-evidencia.png" width="500"/>
 
 <h3>Evidencia 1: Logs y validación</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/evidencia1.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/evidencia1.png" width="500"/>
 
 
 2) DNS - nombres y TTL
@@ -135,10 +135,10 @@ Este valor indica cuánto tiempo los clientes y resolvers pueden mantener en cac
 -Captura: imagenes/dns-ttl.png, con el TTL destacado.
 
 <h3>Evidencia DNS: TTL Configurado</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/dns-ttl.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/dns-ttl.png" width="500"/>
 
 <h3>Evidencia DNS (parte 2): TTL Detallado</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/dns-ttl1.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/dns-ttl1.png" width="500"/>
 
 
 3) TLS - seguridad en tránsito
@@ -171,7 +171,7 @@ Verificar qué puertos están activos ayuda a identificar despliegues incompleto
 
 
 <h3>Evidencia: Puertos Expuestos</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/puertos.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/puertos.png" width="500"/>
 
 5) 12-Factor - port binding, configuración, logs
 
@@ -227,19 +227,19 @@ Desafios:
 Cultural: Resistencia al cambio y falta de colaboración:
 Equipos de desarrollo, operaciones y QA a menudo trabajan en silos. Implementar DevOps requiere cambiar mentalidades y fomentar la colaboración.
 
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/desafios_devops1.jpg" width="300"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/desafios_devops1.jpg" width="300"/>
 
 Desafío técnico: Integración y automatización de herramientas:
 Integrar múltiples herramientas de CI/CD, monitoreo, testing, etc., de forma coherente y automatizada.
 
 <h3>Desafíos de DevOps</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/desafios_devops.jpg" width="400"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/desafios_devops.jpg" width="400"/>
 
 Desafío de gobernanza: Seguridad y cumplimiento normativo
 Asegurar que los procesos DevOps cumplan con regulaciones (como GDPR, HIPAA) sin frenar la velocidad de entrega.
 
 <h3>Desafíos de DevOps</h3>
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/desafios_devops2.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/desafios_devops2.png" width="500"/>
 
 -Enumera tres riesgos con su mitigación concreta (rollback, despliegues graduales, revisión cruzada, límites de "blast radius").
 
@@ -254,7 +254,7 @@ Un experimento controlado para validar despliegues graduales consistiría en com
 
 -Dibuja un diagrama propio en imagenes/arquitectura-minima.png con el flujo: Cliente -> DNS -> Servicio (HTTP) -> TLS, e indica dónde aplicar controles (políticas de caché, validación de certificados, contratos de API, límites de tasa).
 
-![](https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/arquitectura-minima.png)
+![](https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/arquitectura-minima.png)
 
 -Explica cómo cada capa contribuye a despliegues seguros y reproducibles.
 
