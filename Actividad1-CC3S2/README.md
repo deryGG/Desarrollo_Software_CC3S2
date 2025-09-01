@@ -9,7 +9,7 @@ Tiempo total invertido: 04:13
 
 -Agrega una imagen comparativa en imagenes/devops-vs-cascada.png. Puede ser un diagrama propio sencillo.
 
-<img src="https://raw.githubusercontent.com/AriusJoel1/Desarrollo-De-Software/main/Actividad1-CC3S2/imagenes/devops-vs-cascada.png" width="500"/>
+<img src="https://raw.githubusercontent.com/deryGG/Desarrollo_Software_CC3S2/main/Actividad1-CC3S2/imagenes/devops-vs-cascada.png" width="500"/>
 
 Explica por qué DevOps acelera y reduce riesgo en software para la nube frente a cascada (feedback continuo, pequeños lotes, automatización).
 
