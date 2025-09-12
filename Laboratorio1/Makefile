@@ -7,8 +7,8 @@ SHELL := /bin/bash
 APP_NAME ?= miapp
 DOMAIN   ?= miapp.local
 PORT     ?= 8080
-MESSAGE  ?= Hola
-RELEASE  ?= v0
+MESSAGE  ?= Hola CC3S2
+RELEASE  ?= v1
 
 # venv con nombre/prompt 'bdd'
 VENV := bdd
