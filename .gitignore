@@ -4,3 +4,5 @@ Laboratorio1/bdd
 *.cert
 *.crt
 *.key
+# Ignorar el directorio lib64
+Laboratorio2/cc3s2/lib64/
