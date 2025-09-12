@@ -41,12 +41,8 @@
    ![alt text](imagenes/6.png)
 
 4. **Logs como flujo:**  
-   La aplicación imprime logs en la terminal (stdout), cumpliendo el principio 12-Factor.  
-   Ejemplo de log:
-   ```
-   INFO:root:Mensaje: Hola CC3S2, Release: v1
-   ```
----
+
+
 
 ### 2) DNS: nombres, registros y caché
 
