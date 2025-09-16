@@ -1,0 +1,530 @@
+Script started on 2025-09-15 19:39:57-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="115" LINES="12"]
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ exitscript -q evidencias/sesion.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[K[7mcd /etc; ls -a > ~/etc_lista.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd /etc; ls -a > ~/etc_lista.txt
+[?2004l[?2004h]0;dery_100@dery100: /etc[01;32mdery_100@dery100[00m:[01;34m/etc[00m$ [7mfind /tmp -maxdepth 1 -type f \( -name '*.txt' -o -name '*.doc' \) | wc -l[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /tmp -maxdepth 1 -type f \( -name '*.txt' -o -name '*.doc' \) | wc -l
+[?2004l0
+[?2004h]0;dery_100@dery100: /etc[01;32mdery_100@dery100[00m:[01;34m/etc[00m$ de[K[Kcd
+[?2004l[?2004h]0;dery_100@dery100: ~[01;32mdery_100@dery100[00m:[01;34m~[00m$ cd[7mfind /tmp -maxdepth 1 -type f \( -name '*.txt' -o -name '*.doc' \) | wc -l[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pfind /tmp -maxdepth 1 -type f \( -name '*.txt' -o -name '*.doc' \) | wc -[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K [7m~[27m~ /lab[1P/lab[C[C[C[C-cli/
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mfind /tmp -maxdepth 1 -type f \( -name '*.txt' -o -name '*.doc' \) | wc -l[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind /tmp -maxdepth 1 -type f \( -name '*.txt' -o -name '*.doc' \) | wc -l
+[?2004l0
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mprintf "Línea1\nLínea2\n" > test.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf "Línea1\nLínea2\n" > test.txt
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls noexiste 2>> errores.log[27mls noexiste 2>> errores.log
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mfind . -maxdepth 1 -name 'archivo*.txt' | xargs echo rm[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind . -maxdepth 1 -name 'archivo*.txt' | xargs echo rm
+[?2004lrm
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mnl test.txt[27mnl test.txt
+[?2004l     1	Línea1
+     2	Línea2
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mwc -l lista.txt[27mwc -l lista.txt
+[?2004l2 lista.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo adduser devsec; sudo addgroup ops; sudo usermod -aG ops devsec; touch secreto.txt;[27m[7m [27m[7msudo chown devsec:ops secreto.txt; sudo chmod 640[27m[Asudo adduser devsec; sudo addgroup ops; sudo usermod -aG ops devsec; touch secreto.txt; sudo chown devsec:ops secreto.txt; sudo chmod 640
+[?2004l[sudo] password for dery_100: 
+info: Adding user `devsec' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `devsec' (1001) ...
+info: Adding new user `devsec' (1001) with group `devsec (1001)' ...
+info: Creating home directory `/home/devsec' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for devsec
+Enter the new value, or press ENTER for the default
+	Full Name []: dery
+	Room Number []: dery    901971033
+	Work Phone []: 901971033
+	Home Phone []: 5005000
+	Other []: y
+Is the information correct? [Y/n] y
+info: Adding new user `devsec' to supplemental / extra groups `users' ...
+info: Adding user `devsec' to group `users' ...
+info: Selecting GID from range 1000 to 59999 ...
+info: Adding group `ops' (GID 1002) ...
+chmod: missing operand after ‘640’
+Try 'chmod --help' for more information.
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo chmod 640 secreto.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo chmod 640 secreto.txt
+[A
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo adduser devsec; sudo addgroup ops; sudo usermod -aG ops devsec; touch secreto.txt;[27m[7m [27m[7msudo chown devsec:ops secreto.txt; sudo chmod 640[27m[Asudo adduser devsec; sudo addgroup ops; sudo usermod -aG ops devsec; touch secreto.txt; sudo chown devsec:ops secreto.txt; sudo chmod 640
+[?2004lfatal: The user `devsec' already exists.
+fatal: The group `ops' already exists.
+touch: cannot touch 'secreto.txt': Permission denied
+chmod: missing operand after ‘640’
+Try 'chmod --help' for more information.
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo deluser --remove-home devsec[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo deluser --remove-home devsec
+[A
+[?2004linfo: Looking for files to backup/remove ...
+info: Removing files ...
+info: Removing crontab ...
+info: Removing user `devsec' ...
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo delgroup ops[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo delgroup ops
+[A
+[?2004linfo: Removing group `ops' ...
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo rm secreto.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo rm secreto.txt
+[A
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msudo adduser devsec; sudo addgroup ops; sudo usermod -aG ops devsec; touch secreto.txt;[27m[7m [27m[7msudo chown devsec:ops secreto.txt; sudo chmod 640[27m[Asudo adduser devsec; sudo addgroup ops; sudo usermod -aG ops devsec; touch secreto.txt; sudo chown devsec:ops secreto.txt; sudo chmod 640
+[?2004linfo: Adding user `devsec' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `devsec' (1001) ...
+info: Adding new user `devsec' (1001) with group `devsec (1001)' ...
+info: Creating home directory `/home/devsec' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for devsec
+Enter the new value, or press ENTER for the default
+	Full Name []: dery
+	Room Number []: 3
+	Work Phone []: 901971033
+	Home Phone []: 5005000
+	Other []: 901971033
+Is the information correct? [Y/n] y
+info: Adding new user `devsec' to supplemental / extra groups `users' ...
+info: Adding user `devsec' to group `users' ...
+info: Selecting GID from range 1000 to 59999 ...
+info: Adding group `ops' (GID 1002) ...
+chmod: missing operand after ‘640’
+Try 'chmod --help' for more information.
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mps aux | grep bash[27mps aux | grep bash
+[?2004ldery_100     441  0.0  0.0   6072  4992 pts/1    S+   18:46   0:00 -[01;31m[Kbash[m[K
+dery_100    1770  0.0  0.0   6072  5248 pts/0    Ss   19:39   0:00 -[01;31m[Kbash[m[K
+dery_100    1801  0.0  0.0   6208  5120 pts/2    Ss   19:42   0:00 [01;31m[Kbash[m[K -i
+dery_100    2163  0.0  0.0   4088  1920 pts/2    S+   20:14   0:00 grep --color=auto [01;31m[Kbash[m[K
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msystemctl status systemd-logind[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csystemctl status systemd-logind
+[?2004l[?1h=[0;1;32m●[0m systemd-logind.service - User Login Management[m
+     Loaded: loaded (]8;;file://dery100/usr/lib/systemd/system/systemd-logind.service/usr/lib/systemd/system/systemd-logind.service]8;;; static[0;1;32m[0m)[m
+    Drop-In: /usr/lib/systemd/system/systemd-logind.service.d[m
+             └─]8;;file://dery100/usr/lib/systemd/system/systemd-logind.service.d/dbus.confdbus.conf]8;;[m
+     Active: [0;1;32mactive (running)[0m since Mon 2025-09-15 17:06:48 -05; 3h 12min ago[m
+       Docs: ]8;;man:sd-login(3)man:sd-login(3)]8;;[m
+             ]8;;man:systemd-logind.service(8)man:systemd-logind.service(8)]8;;[m
+             ]8;;man:logind.conf(5)man:logind.conf(5)]8;;[m
+             ]8;;man:org.freedesktop.login1(5)man:org.freedesktop.login1(5)]8;;[m
+   Main PID: 192 (systemd-logind)[m
+     Status: "[0;1;36mProcessing requests...[0m"[m
+      Tasks: 1 (limit: 13943)[m
+   FD Store: 0[0;38;5;245m (limit: 512)[0m[m
+     Memory: 1.7M (peak: 2.2M)[m
+        CPU: 217ms[m
+     CGroup: /system.slice/systemd-logind.service[m
+[7mlines 1-16[27m[K[K             └─[0;38;5;245m192 /usr/lib/systemd/systemd-logind[0m[m
+[7mlines 2-17[27m[K[K[m
+[7mlines 3-18[27m[K[KSep 15 17:06:48 dery100 systemd[1]: Starting systemd-logind.service - User Login Management...[m
+[7mlines 4-19[27m[K[KSep 15 17:06:48 dery100 systemd-logind[192]: New seat seat0.[m
+[7mlines 5-20[27m[K[KSep 15 17:06:48 dery100 systemd[1]: Started systemd-logind.service - User Login Management.[m
+[7mlines 6-21[27m[K[KSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[7mlines 7-22[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K[K[7mlines 7-22/22 (END)[27m[K[K [KESCESC[K  [K[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[H[2J[HSep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[K[7mlines 22-22/22 (END)[27m[K[K[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[K/[K[K[7mNo previous regular expression  (press RETURN)[27m[25;1H[K[K[K[7mlines 22-22/22 (END)[27m[K[K[K[7mlines 22-22/22 (END)[27m[K[K [KESCESC[K^J^J[K[7mlines 22-22/22 (END)[27m[K
+[1]+  Stopped                 systemctl status systemd-logind
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K [KESCESC[200~journalctl -u systemd-logind -n 10~
+[?2004l[200~journalctl: command not found
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ cl[K[Kclear
+[?2004l[H[2J[3J[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mjournalctl -u systemd-logind -n 10[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjournalctl -u systemd-logind -n 10
+[?2004l[?1h=Sep 12 15:51:41 dery100 systemd[1]: Started systemd-logind.service - User Login Management.[m
+Sep 12 15:51:42 dery100 systemd-logind[180]: New session 1 of user dery_100.[m
+[0;1;39m-- Boot 5611897114094dce8579285281db491b --[0m[m
+Sep 12 17:36:45 dery100 systemd[1]: Starting systemd-logind.service - User Login Management...[m
+Sep 12 17:36:48 dery100 systemd-logind[180]: New seat seat0.[m
+Sep 12 17:36:48 dery100 systemd[1]: Started systemd-logind.service - User Login Management.[m
+Sep 12 17:36:49 dery100 systemd-logind[180]: New session 1 of user dery_100.[m
+[0;1;39m-- Boot 650e2a5b51ed466c801aa8f63dac2116 --[0m[m
+Sep 15 17:06:48 dery100 systemd[1]: Starting systemd-logind.service - User Login Management...[m
+Sep 15 17:06:48 dery100 systemd-logind[192]: New seat seat0.[m
+Sep 15 17:06:48 dery100 systemd[1]: Started systemd-logind.service - User Login Management.[m
+Sep 15 17:06:54 dery100 systemd-logind[192]: New session 1 of user dery_100.[m
+[K[?1l>[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msleep 100 &[27msleep 100 &
+[?2004l[2] 2189
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mps aux[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps aux
+[A
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  21796 12224 ?        Ss   18:46   0:01 /sbin/init
+root           2  0.0  0.0   3060  1920 ?        Sl   18:46   0:00 /init
+root           7  0.0  0.0   3104  1936 ?        Sl   18:46   0:00 plan9 --control-socket 7 --log-level 4 --server-
+root          43  0.0  0.1  50444 15488 ?        S<s  18:46   0:00 /usr/lib/systemd/systemd-journald
+root          92  0.0  0.0  25136  6144 ?        Ss   18:46   0:01 /usr/lib/systemd/systemd-udevd
+systemd+     164  0.0  0.1  21456 12544 ?        Ss   18:46   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     165  0.0  0.0  91024  7552 ?        Ssl  18:46   0:00 /usr/lib/systemd/systemd-timesyncd
+root         174  0.0  0.0   4236  2432 ?        Ss   18:46   0:00 /usr/sbin/cron -f -P
+message+     175  0.0  0.0   9620  4736 ?        Ss   18:46   0:00 @dbus-daemon --system --address=systemd: --nofor
+root         192  0.0  0.0  17964  8192 ?        Ss   18:46   0:00 /usr/lib/systemd/systemd-logind
+root         194  0.0  0.1 1756096 12928 ?       Ssl  18:46   0:00 /usr/libexec/wsl-pro-service -vv
+root         200  0.0  0.0   3160  1920 hvc0     Ss+  18:46   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud -
+syslog       215  0.0  0.0 222508  5376 ?        Ssl  18:46   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         219  0.0  0.0  11552  1928 ?        Ss   18:46   0:00 nginx: master process /usr/sbin/nginx -g daemon 
+www-data     220  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     221  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     222  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     223  0.0  0.0  13212  4744 ?        S    18:46   0:00 nginx: worker process
+www-data     224  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+root         225  0.0  0.0   3116  1792 tty1     Ss+  18:46   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+www-data     226  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     227  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     228  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     229  0.0  0.0  13212  4616 ?        S    18:46   0:00 nginx: worker process
+www-data     230  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     231  0.0  0.0  13212  4488 ?        S    18:46   0:00 nginx: worker process
+www-data     232  0.0  0.0  13212  4360 ?        S    18:46   0:00 nginx: worker process
+root         239  0.0  0.1 107012 22400 ?        Ssl  18:46   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/
+root         338  0.0  0.0   6664  4480 pts/1    Ss   18:46   0:00 /bin/login -f
+dery_100     427  0.0  0.0  20300 11136 ?        Ss   18:47   0:00 /usr/lib/systemd/systemd --user
+dery_100     428  0.0  0.0  21156  3520 ?        S    18:47   0:00 (sd-pam)
+dery_100     441  0.0  0.0   6072  4992 pts/1    S+   18:47   0:00 -bash
+polkitd     1199  0.0  0.0 308164  7552 ?        Ssl  19:14   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root        1762  0.0  0.0   3064   896 ?        Ss   19:40   0:00 /init
+root        1763  0.0  0.0   3080  1152 ?        S    19:40   0:00 /init
+dery_100    1770  0.0  0.0   6072  5248 pts/0    Ss   19:40   0:00 -bash
+dery_100    1800  0.0  0.0   3144  1920 pts/0    S+   19:43   0:00 script -q evidencias/sesion.txt
+dery_100    1801  0.0  0.0   6208  5120 pts/2    Ss   19:43   0:00 bash -i
+dery_100    2169  0.0  0.0  14772  6096 pts/2    T    20:19   0:00 systemctl status systemd-logind
+dery_100    2170  0.0  0.0   3512  2304 pts/2    T    20:19   0:00 less
+dery_100    2189  0.0  0.0   3124  1664 pts/2    S    20:23   0:00 sleep 100
+dery_100    2190  0.0  0.0   8280  4096 pts/2    R+   20:24   0:00 ps aux
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ ps
+[?2004l    PID TTY          TIME CMD
+   1801 pts/2    00:00:00 bash
+   2169 pts/2    00:00:00 systemctl
+   2170 pts/2    00:00:00 less
+   2191 pts/2    00:00:00 ps
+[2]-  Done                    sleep 100
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ ho[Kill[K[K[K[Kkill 2189
+[?2004lbash: kill: (2189) - No such process
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ kill 2189ps[K
+[?2004l    PID TTY          TIME CMD
+   1801 pts/2    00:00:00 bash
+   2169 pts/2    00:00:00 systemctl
+   2170 pts/2    00:00:00 less
+   2192 pts/2    00:00:00 ps
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ pskill 2189ps[K aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  21796 12224 ?        Ss   18:47   0:01 /sbin/init
+root           2  0.0  0.0   3060  1920 ?        Sl   18:47   0:00 /init
+root           7  0.0  0.0   3104  1936 ?        Sl   18:47   0:00 plan9 --control-socket 7 --log-level 4 --server-
+root          43  0.0  0.1  50444 15488 ?        S<s  18:47   0:00 /usr/lib/systemd/systemd-journald
+root          92  0.0  0.0  25136  6144 ?        Ss   18:47   0:01 /usr/lib/systemd/systemd-udevd
+systemd+     164  0.0  0.1  21456 12544 ?        Ss   18:47   0:00 /usr/lib/systemd/systemd-resolved
+systemd+     165  0.0  0.0  91024  7552 ?        Ssl  18:47   0:00 /usr/lib/systemd/systemd-timesyncd
+root         174  0.0  0.0   4236  2432 ?        Ss   18:47   0:00 /usr/sbin/cron -f -P
+message+     175  0.0  0.0   9620  4736 ?        Ss   18:47   0:00 @dbus-daemon --system --address=systemd: --nofor
+root         192  0.0  0.0  17964  8192 ?        Ss   18:47   0:00 /usr/lib/systemd/systemd-logind
+root         194  0.0  0.1 1756096 12928 ?       Ssl  18:47   0:00 /usr/libexec/wsl-pro-service -vv
+root         200  0.0  0.0   3160  1920 hvc0     Ss+  18:47   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud -
+syslog       215  0.0  0.0 222508  5376 ?        Ssl  18:47   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         219  0.0  0.0  11552  1928 ?        Ss   18:47   0:00 nginx: master process /usr/sbin/nginx -g daemon 
+www-data     220  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     221  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     222  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     223  0.0  0.0  13212  4744 ?        S    18:47   0:00 nginx: worker process
+www-data     224  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+root         225  0.0  0.0   3116  1792 tty1     Ss+  18:47   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+www-data     226  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     227  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     228  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     229  0.0  0.0  13212  4616 ?        S    18:47   0:00 nginx: worker process
+www-data     230  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     231  0.0  0.0  13212  4488 ?        S    18:47   0:00 nginx: worker process
+www-data     232  0.0  0.0  13212  4360 ?        S    18:47   0:00 nginx: worker process
+root         239  0.0  0.1 107012 22400 ?        Ssl  18:47   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/
+root         338  0.0  0.0   6664  4480 pts/1    Ss   18:47   0:00 /bin/login -f
+dery_100     427  0.0  0.0  20300 11136 ?        Ss   18:47   0:00 /usr/lib/systemd/systemd --user
+dery_100     428  0.0  0.0  21156  3520 ?        S    18:47   0:00 (sd-pam)
+dery_100     441  0.0  0.0   6072  4992 pts/1    S+   18:47   0:00 -bash
+polkitd     1199  0.0  0.0 308164  7552 ?        Ssl  19:14   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root        1762  0.0  0.0   3064   896 ?        Ss   19:40   0:00 /init
+root        1763  0.0  0.0   3080  1152 ?        S    19:40   0:00 /init
+dery_100    1770  0.0  0.0   6072  5248 pts/0    Ss   19:40   0:00 -bash
+dery_100    1800  0.0  0.0   3144  1920 pts/0    S+   19:44   0:00 script -q evidencias/sesion.txt
+dery_100    1801  0.0  0.0   6724  5760 pts/2    Ss   19:44   0:00 bash -i
+dery_100    2169  0.0  0.0  14772  6096 pts/2    T    20:19   0:00 systemctl status systemd-logind
+dery_100    2170  0.0  0.0   3512  2304 pts/2    T    20:19   0:00 less
+dery_100    2193  0.0  0.0   8280  4096 pts/2    R+   20:27   0:00 ps aux
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mnl test.txt[27m[1Pnl test.tx[K[K[K[K[K[K[K[K[K[K[7mnamei -l secreto.txt[27mnamei -l secreto.txt
+[?2004lf: secreto.txt
+-rw-r--r-- devsec ops secreto.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mid devsec[27mid devsec
+[?2004luid=1001(devsec) gid=1001(devsec) groups=1001(devsec),100(users),1002(ops)
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mgrep root /etc/passwd[27mgrep root /etc/passwd
+[?2004l[01;31m[Kroot[m[K:x:0:0:[01;31m[Kroot[m[K:/[01;31m[Kroot[m[K:/bin/bash
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' datos.txt > nuevo.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' datos.txt > nuevo.txt
+[?2004lsed: can't read datos.txt: No such file or directory
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' documentos/datos.txt > nuevo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' documentos/datos.txt > nuevo.txt
+[A
+[?2004lsed: can't read documentos/datos.txt: No such file or directory
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls
+[A
+[?2004lerrores.log  [0m[01;34mevidencias[0m  lista.txt  nuevo.txt  secreto.txt  test.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' documentos/datos.txt > nuevo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' documentos/datos.txt > nuevo.txt
+[A
+[?2004lsed: can't read documentos/datos.txt: No such file or directory
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mecho -e "dato1\ndato2\ndato1" > datos.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho -e "dato1\ndato2\ndato1" > datos.txt
+[A
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' datos.txt > nuevo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' datos.txt > nuevo.txt
+[A
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls -l datos.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l datos.txt
+[A
+[?2004l-rw-r--r-- 1 dery_100 dery_100 18 Sep 15 20:36 datos.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mpwd[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd
+[A
+[?2004l/home/dery_100/lab-cli
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' /ruta/completa/a/datos.txt > nuevo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' /ruta/completa/a/datos.txt > nuevo.txt
+[A
+[?2004lsed: can't read /ruta/completa/a/datos.txt: No such file or directory
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mrealpath datos.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crealpath datos.txt
+[A
+[?2004l/home/dery_100/lab-cli/datos.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls -l /ruta/completa/a/datos.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l /ruta/completa/a/datos.txt
+[A
+[?2004lls: cannot access '/ruta/completa/a/datos.txt': No such file or directory
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' /home/dery_100/lab-cli/datos.txt > nuevo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' /home/dery_100/lab-cli/datos.txt > nuevo.txt
+[A
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' /home/dery_100/lab-cli/datos.txt > nuevo.txt[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' /home/dery_100/lab-cli/datos.txt > nuevo.txt
+[A
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7msed 's/dato1/secreto/' datos.txt > nuevo.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed 's/dato1/secreto/' datos.txt > nuevo.txt
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mawk -F: '{print $1}' /etc/passwd | sort | uniq[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk -F: '{print $1}' /etc/passwd | sort | uniq
+[?2004l_apt
+backup
+bin
+daemon
+dery_100
+devsec
+dhcpcd
+games
+irc
+landscape
+list
+lp
+mail
+man
+messagebus
+news
+nobody
+polkitd
+proxy
+root
+sync
+sys
+syslog
+systemd-network
+systemd-resolve
+systemd-timesync
+uucp
+uuidd
+www-data
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [K]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mprintf "hola\n" | tr 'a-z' 'A-Z' | tee mayus.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf "hola\n" | tr 'a-z' 'A-Z' | tee mayus.txt
+[?2004lHOLA
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mfind /tmp -mtime -5 -type f[27mfind /tmp -mtime -5 -type f
+[?2004lfind: ‘/tmp/snap-private-tmp’: Permission denied
+find: ‘/tmp/systemd-private-650e2a5b51ed466c801aa8f63dac2116-systemd-timesyncd.service-vtdZa1’: Permission denied
+find: ‘/tmp/systemd-private-650e2a5b51ed466c801aa8f63dac2116-systemd-resolved.service-kdHwC2’: Permission denied
+find: ‘/tmp/systemd-private-650e2a5b51ed466c801aa8f63dac2116-polkit.service-ZzQyX1’: Permission denied
+find: ‘/tmp/systemd-private-650e2a5b51ed466c801aa8f63dac2116-wsl-pro.service-ENUhJj’: Permission denied
+find: ‘/tmp/systemd-private-650e2a5b51ed466c801aa8f63dac2116-systemd-logind.service-OCAznF’: Permission denied
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls /etc | grep conf | sort | tee lista_conf.txt | wc -l[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls /etc | grep conf | sort | tee lista_conf.txt | wc -l
+[?2004l32
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mgrep -Ei 'error|fail' evidencias/sesion.txt | tee evidencias/hallazgos.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -Ei 'error|fail' evidencias/sesion.txt | tee evidencias/hallazgos.txt
+[?2004l[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls noexiste 2>> errores.log[27mls noexiste 2>> errores.log
+[?2004lerrores.log  [0m[01;34mevidencias[0m  lista.txt  nuevo.txt  secreto.txt  test.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mgrep -Ei 'error|fail' evidencias/sesion.txt | tee evidencias/hallazgos.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -Ei 'error|fail' evidencias/sesion.txt | tee evidencias/hallazgos.txt
+[?2004l[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls noexiste 2>> errores.log[27mls noexiste 2>> errores.log
+[?2004lerrores.log  [0m[01;34mevidencias[0m  lista.txt  nuevo.txt  secreto.txt  test.txt
+[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mgrep -Ei 'error|fail' evidencias/sesion.txt | tee evidencias/hallazgos.txt[27m
+[7mdery_100@dery100:~/lab-cli$ ls noexiste 2>> errores.log[27m
+[7merrores.log  evidencias  lista.txt  nuevo.txt  secreto.txt  test.txt[27m
+[7mdery_100@dery100:~/lab-cli$ [27m[A[A[Agrep -Ei 'error|fail' evidencias/sesion.txt | tee evidencias/hallazgos.txt
+dery_100@dery100:~/lab-cli$ ls noexiste 2>> errores.log
+errores.log  evidencias  lista.txt  nuevo.txt  secreto.txt  test.txt
+[1Pdery_100@dery100:~/lab-cli$[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K

@@ -1,0 +1,2 @@
+[?2004l[?2004h]0;dery_100@dery100: ~/lab-cli[01;32mdery_100@dery100[00m:[01;34m~/lab-cli[00m$ [7mls noexiste 2>> errores.log[27mls noexiste 2>> errores.log
+[?2004lerrores.log  [0m[01;34mevidencias[0m  lista.txt  nuevo.txt  secreto.txt  test.txt
