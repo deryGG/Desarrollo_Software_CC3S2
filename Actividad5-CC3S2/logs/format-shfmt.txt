@@ -1,0 +1,75 @@
+--- scripts/run_tests.sh.orig
++++ scripts/run_tests.sh
+@@ -9,47 +9,47 @@
+ tmp="$(mktemp)"
+ 
+ cleanup() {
+-    rc="$1"
+-    rm -f "$tmp"
+-    if [ -f "${SRC_DIR}/hello.py.bak" ]; then
+-        mv -- "${SRC_DIR}/hello.py.bak" "${SRC_DIR}/hello.py"
+-    fi
+-    exit "$rc"
++	rc="$1"
++	rm -f "$tmp"
++	if [ -f "${SRC_DIR}/hello.py.bak" ]; then
++		mv -- "${SRC_DIR}/hello.py.bak" "${SRC_DIR}/hello.py"
++	fi
++	exit "$rc"
+ }
+ trap 'cleanup $?' EXIT INT TERM
+ 
+ check_deps() {
+-    local -a deps=("$PY" grep)
+-    for dep in "${deps[@]}"; do
+-        if ! command -v "$dep" >/dev/null 2>&1; then
+-            echo "Error: $dep no está instalado" >&2
+-            exit 1
+-        fi
+-    done
++	local -a deps=("$PY" grep)
++	for dep in "${deps[@]}"; do
++		if ! command -v "$dep" >/dev/null 2>&1; then
++			echo "Error: $dep no está instalado" >&2
++			exit 1
++		fi
++	done
+ }
+ 
+ run_tests() {
+-    local script="$1"
+-    local output
+-    output="$("$PY" "$script")"
+-    if ! echo "$output" | grep -Fq "Hello, World!"; then
+-        echo "Test falló: salida inesperada" >&2
+-        mv -- "$script" "${script}.bak" || true
+-        exit 2
+-    fi
+-    echo "Test pasó: $output"
++	local script="$1"
++	local output
++	output="$("$PY" "$script")"
++	if ! echo "$output" | grep -Fq "Hello, World!"; then
++		echo "Test falló: salida inesperada" >&2
++		mv -- "$script" "${script}.bak" || true
++		exit 2
++	fi
++	echo "Test pasó: $output"
+ }
+ 
+ echo "Demostrando pipefail:"
+ set +o pipefail
+ if false | true; then
+-    echo "Sin pipefail: el pipe se considera exitoso (status 0)."
++	echo "Sin pipefail: el pipe se considera exitoso (status 0)."
+ fi
+ set -o pipefail
+ if false | true; then
+-    :
++	:
+ else
+-    echo "Con pipefail: se detecta el fallo (status != 0)."
++	echo "Con pipefail: se detecta el fallo (status != 0)."
+ fi
+ 
+ cat <<'EOF' >|"$tmp"
