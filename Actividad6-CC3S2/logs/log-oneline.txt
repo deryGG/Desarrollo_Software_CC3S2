@@ -1,0 +1,4 @@
+c1d96de versiones
+391bc41 Resuelve conflicto de merge
+70e6329 Agrega nueva característica
+e5bc5a9 Commit inicial con README.md

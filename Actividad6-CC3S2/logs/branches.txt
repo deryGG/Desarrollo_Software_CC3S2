@@ -1,0 +1,2 @@
+  feature/nueva-caracteristica 70e6329 Agrega nueva característica
+* master                       c1d96de versiones
