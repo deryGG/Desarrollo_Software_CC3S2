@@ -1,0 +1,6 @@
+*   a1b2c3d (HEAD -> main) Merge branch 'feature-validate'
+|\  
+| * c5485c3 (feature-validate) Modificar script.sh - feature-validate
+* | f1b243d Modificar script.sh - main
+|/  
+* c1385c3 Agregar script.sh
