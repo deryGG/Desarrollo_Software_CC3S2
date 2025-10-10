@@ -1,0 +1,98 @@
+Script started on 2025-10-09 23:09:10-05:00 [COMMAND="make test_all" TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="160" LINES="15"]
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+Requirement already satisfied: Werkzeug==2.1.2 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (2.1.2)
+Requirement already satisfied: SQLAlchemy==1.4.46 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (1.4.46)
+Requirement already satisfied: Flask==2.1.2 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (2.1.2)
+Requirement already satisfied: Flask-SQLAlchemy==2.5.1 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (2.5.1)
+Requirement already satisfied: requests==2.31.0 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (2.31.0)
+Requirement already satisfied: pytest==8.3.3 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 11)) (8.3.3)
+Requirement already satisfied: pytest-cov==5.0.0 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (5.0.0)
+Requirement already satisfied: coverage==7.6.1 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 13)) (7.6.1)
+Requirement already satisfied: factory-boy==3.3.0 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 14)) (3.3.0)
+Requirement already satisfied: pylint==3.2.7 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 15)) (3.2.7)
+Requirement already satisfied: ruff in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 18)) (0.14.0)
+Requirement already satisfied: black in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 19)) (25.9.0)
+Requirement already satisfied: autoflake in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 20)) (2.3.1)
+Requirement already satisfied: faker==37.11.0 in ./.venv/lib/python3.12/site-packages (from -r requirements.txt (line 22)) (37.11.0)
+Requirement already satisfied: greenlet!=0.4.17 in ./.venv/lib/python3.12/site-packages (from SQLAlchemy==1.4.46->-r requirements.txt (line 3)) (3.2.4)
+Requirement already satisfied: Jinja2>=3.0 in ./.venv/lib/python3.12/site-packages (from Flask==2.1.2->-r requirements.txt (line 6)) (3.1.6)
+Requirement already satisfied: itsdangerous>=2.0 in ./.venv/lib/python3.12/site-packages (from Flask==2.1.2->-r requirements.txt (line 6)) (2.2.0)
+Requirement already satisfied: click>=8.0 in ./.venv/lib/python3.12/site-packages (from Flask==2.1.2->-r requirements.txt (line 6)) (8.3.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./.venv/lib/python3.12/site-packages (from requests==2.31.0->-r requirements.txt (line 8)) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.12/site-packages (from requests==2.31.0->-r requirements.txt (line 8)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.12/site-packages (from requests==2.31.0->-r requirements.txt (line 8)) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.12/site-packages (from requests==2.31.0->-r requirements.txt (line 8)) (2025.10.5)
+Requirement already satisfied: iniconfig in ./.venv/lib/python3.12/site-packages (from pytest==8.3.3->-r requirements.txt (line 11)) (2.1.0)
+Requirement already satisfied: packaging in ./.venv/lib/python3.12/site-packages (from pytest==8.3.3->-r requirements.txt (line 11)) (25.0)
+Requirement already satisfied: pluggy<2,>=1.5 in ./.venv/lib/python3.12/site-packages (from pytest==8.3.3->-r requirements.txt (line 11)) (1.6.0)
+Requirement already satisfied: platformdirs>=2.2.0 in ./.venv/lib/python3.12/site-packages (from pylint==3.2.7->-r requirements.txt (line 15)) (4.5.0)
+Requirement already satisfied: astroid<=3.3.0-dev0,>=3.2.4 in ./.venv/lib/python3.12/site-packages (from pylint==3.2.7->-r requirements.txt (line 15)) (3.2.4)
+Requirement already satisfied: isort!=5.13.0,<6,>=4.2.5 in ./.venv/lib/python3.12/site-packages (from pylint==3.2.7->-r requirements.txt (line 15)) (5.13.2)
+Requirement already satisfied: mccabe<0.8,>=0.6 in ./.venv/lib/python3.12/site-packages (from pylint==3.2.7->-r requirements.txt (line 15)) (0.7.0)
+Requirement already satisfied: tomlkit>=0.10.1 in ./.venv/lib/python3.12/site-packages (from pylint==3.2.7->-r requirements.txt (line 15)) (0.13.3)
+Requirement already satisfied: dill>=0.3.6 in ./.venv/lib/python3.12/site-packages (from pylint==3.2.7->-r requirements.txt (line 15)) (0.4.0)
+Requirement already satisfied: tzdata in ./.venv/lib/python3.12/site-packages (from faker==37.11.0->-r requirements.txt (line 22)) (2025.2)
+Requirement already satisfied: mypy-extensions>=0.4.3 in ./.venv/lib/python3.12/site-packages (from black->-r requirements.txt (line 19)) (1.1.0)
+Requirement already satisfied: pathspec>=0.9.0 in ./.venv/lib/python3.12/site-packages (from black->-r requirements.txt (line 19)) (0.12.1)
+Requirement already satisfied: pytokens>=0.1.10 in ./.venv/lib/python3.12/site-packages (from black->-r requirements.txt (line 19)) (0.1.10)
+Requirement already satisfied: pyflakes>=3.0.0 in ./.venv/lib/python3.12/site-packages (from autoflake->-r requirements.txt (line 20)) (3.4.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./.venv/lib/python3.12/site-packages (from Jinja2>=3.0->Flask==2.1.2->-r requirements.txt (line 6)) (3.0.3)
+cd soluciones/aserciones_pruebas   && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest -q || exit 1
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                                                                                                     [100%][0m
+[32m[32m[1m4 passed[0m[32m in 0.06s[0m[0m
+cd soluciones/pruebas_pytest       && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest -q || exit 1
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                                                                                              [100%][0m
+[32m[32m[1m11 passed[0m[32m in 0.06s[0m[0m
+cd soluciones/pruebas_fixtures     && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest -q || exit 1
+[32m.[0m[32m.[0m[32m                                                                                                                                                       [100%][0m
+[32m[32m[1m2 passed[0m[32m in 0.47s[0m[0m
+cd soluciones/coverage_pruebas     && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest --cov=models --cov-report term-missing -q || exit 1
+[1m===================================================================== test session starts ======================================================================[0m
+platform linux -- Python 3.12.3, pytest-8.3.3, pluggy-1.6.0
+rootdir: /home/dery_100/Actividad9-CC3S2/soluciones/coverage_pruebas
+configfile: setup.cfg
+testpaths: tests
+plugins: Faker-37.11.0, cov-5.0.0
+[1mcollecting ... [0m[1mcollecting 10 items                                                                                                                                            [0m[1mcollected 10 items                                                                                                                                             [0m
+
+tests/test_account.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                                                                         [100%][0m
+
+---------- coverage: platform linux, python 3.12.3-final-0 -----------
+Name                 Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------
+models/__init__.py       6      0      0      0   100%
+models/account.py       47      0     10      0   100%
+----------------------------------------------------------------
+TOTAL                   53      0     10      0   100%
+Coverage HTML written to dir htmlcov
+
+
+[32m====================================================================== [32m[1m10 passed[0m[32m in 1.27s[0m[32m ======================================================================[0m
+cd soluciones/factories_fakes      && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest -q || exit 1
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                                                                                                 [100%][0m
+[32m[32m[1m8 passed[0m[32m in 0.65s[0m[0m
+cd soluciones/mocking_objetos      && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest -q || exit 1
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                                                                                                   [100%][0m
+[32m[32m[1m6 passed[0m[32m in 0.22s[0m[0m
+cd soluciones/practica_tdd         && /home/dery_100/Actividad9-CC3S2/.venv/bin/pytest -q || exit 1
+[1m===================================================================== test session starts ======================================================================[0m
+platform linux -- Python 3.12.3, pytest-8.3.3, pluggy-1.6.0
+rootdir: /home/dery_100/Actividad9-CC3S2/soluciones/practica_tdd
+configfile: setup.cfg
+plugins: Faker-37.11.0, cov-5.0.0
+[1mcollecting ... [0m[1mcollected 5 items                                                                                                                                              [0m
+
+test_counter.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                                                                                    [100%][0m
+
+---------- coverage: platform linux, python 3.12.3-final-0 -----------
+Name         Stmts   Miss Branch BrPart  Cover   Missing
+--------------------------------------------------------
+counter.py      31      2     16      2    91%   42, 74
+--------------------------------------------------------
+TOTAL           31      2     16      2    91%
+
+
+[32m====================================================================== [32m[1m5 passed[0m[32m in 0.59s[0m[32m =======================================================================[0m
+
+Script done on 2025-10-09 23:09:25-05:00 [COMMAND_EXIT_CODE="0"]

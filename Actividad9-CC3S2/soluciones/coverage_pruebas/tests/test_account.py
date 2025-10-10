@@ -157,3 +157,5 @@ class TestAccountModel:
         representation = repr(account)
         expected = f"<Account '{data['name']}'>"
         assert representation == expected
+
+    
